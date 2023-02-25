@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rebeccapurple;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-top: 4%;
+  font-family: "Gajraj One", cursive;
+  color: rgb(0, 20, 37);
+}
+
+/* Calculator Body */
+.calculator {
+  border: 2px solid white;
+  width: 35vw;
+  margin: 4% 40% 7% 32%;
+}
+
+/* Display Screen */
+.display {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 20px;
+  height: 60px;
+  background-color: rgb(41, 50, 51);
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+}
+
+/* Buttons Container */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Buttons */
+button {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(74, 94, 95);
+  border: 2px solid white;
+  font-size: 20px;
+}
+
+/* Bottom Line */
+.equals-sign {
+  grid-column-end: span 2;
+}
+.del {
+  grid-column-end: span 2;
+}
+
+/* Footer */
+footer {
+  position: sticky;
+  text-align: center;
+  font-family: "Mynerve", cursive;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalciWeb</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Mynerve&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>CalciWeb</h1>
+    <div class="contnet">
+      <div class="calculator">
+        <!-- Display  Screen -->
+        <input type="text" class="display" id="result" />
+        <div class="buttons">
+          <!-- Row-1 -->
+          <button type="button" value="7" onclick="window.append('7')">
+            7
+          </button>
+          <button type="button" value="8" onclick="window.append('8')">
+            8
+          </button>
+          <button type="button" value="9" onclick="window.append('9')">
+            9
+          </button>
+          <button
+            type="button"
+            class="operator"
+            value="+"
+            onclick="window.append('+')"
+          >
+            +
+          </button>
+          <!-- Row-2 -->
+          <button type="button" value="4" onclick="window.append('4')">
+            4
+          </button>
+          <button type="button" value="5" onclick="window.append('5')">
+            5
+          </button>
+          <button type="button" value="6" onclick="window.append('6')">
+            6
+          </button>
+          <button
+            type="button"
+            class="operator"
+            value="-"
+            onclick="window.append('-')"
+          >
+            -
+          </button>
+          <!-- Row-3 -->
+          <button type="button" value="1" onclick="window.append('1')">
+            1
+          </button>
+          <button type="button" value="2" onclick="window.append('2')">
+            2
+          </button>
+          <button type="button" value="3" onclick="window.append('3')">
+            3
+          </button>
+          <button
+            type="button"
+            class="operator"
+            value="*"
+            onclick="window.append('*')"
+          >
+            *
+          </button>
+          <!-- Row-4 -->
+          <button
+            type="button"
+            class="clear"
+            value="AC"
+            onclick="window.clear()"
+          >
+            AC
+          </button>
+          <button type="button" value="0" onclick="window.append('0')">
+            0
+          </button>
+          <button
+            type="button"
+            class="decimal"
+            value="."
+            onclick="window.append('.')"
+          >
+            .
+          </button>
+          <button
+            type="button"
+            class="operator"
+            value="/"
+            onclick="window.append('/')"
+          >
+            /
+          </button>
+          <!-- Row-5 -->
+          <button type="button" class="del" value="=" onclick="window.del()">
+            del
+          </button>
+          <button
+            type="button"
+            class="equals-sign"
+            value="="
+            onclick="window.calculate()"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <footer>Coded by @swarajmhatre</footer>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
